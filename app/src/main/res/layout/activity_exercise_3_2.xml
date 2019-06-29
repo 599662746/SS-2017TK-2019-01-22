@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:rowCount="3"
+    android:columnCount="3"
+    tools:context=".exercise_3_2.Exercise_3_2_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_columnSpan="3"
+        android:text="环境指标" />
+
+    <com.example.administrator.a2017.exercise_3_2.EnvironmentalStateButton
+        android:id="@+id/temperature"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:label="空气温度"
+        android:onClick="startTemperatureActivity"
+        />
+
+    <com.example.administrator.a2017.exercise_3_2.EnvironmentalStateButton
+        android:id="@+id/humidity"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:label="空气湿度"
+        />
+
+    <com.example.administrator.a2017.exercise_3_2.EnvironmentalStateButton
+        android:id="@+id/lightIntensity"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:label="光照"
+        />
+    <com.example.administrator.a2017.exercise_3_2.EnvironmentalStateButton
+        android:id="@+id/co2"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:label="CO₂"
+        />
+    <com.example.administrator.a2017.exercise_3_2.EnvironmentalStateButton
+        android:id="@+id/pm2_5"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:label="PM2.5"
+        />
+    <com.example.administrator.a2017.exercise_3_2.EnvironmentalStateButton
+        android:id="@+id/status"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        app:label="道路状态"
+        />
+
+</GridLayout>
